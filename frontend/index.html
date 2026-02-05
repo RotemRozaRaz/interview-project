@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview App</title>
+</head>
+<body>
+    <h1>Frontend Ready</h1>
+    <button onclick="testApi()">Test API</button>
+
+    <script>
+        async function testApi() {
+            const res = await fetch("http://127.0.0.1:8000/");
+            const data = await res.json();
+            alert(JSON.stringify(data));
+        }
+    </script>
+</body>
+</html>
