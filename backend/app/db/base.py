@@ -1,4 +1,5 @@
-from app.db.base_class import Base
+from backend.app.db.base_class import Base
 
-from app.models.user import User  # noqa: F401
-from app.models.note import Note  # noqa: F401
+from backend.app.db.base_class import Base  # noqa
+from backend.app.models import User, Note  # noqa
+
